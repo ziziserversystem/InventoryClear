@@ -1,0 +1,20 @@
+---
+name: InventoryClear
+author: narapon
+version: 1.0.0
+api:
+- 4.0.0
+- 3.3.2
+main: Narapon\InventoryClear\Main
+commands:
+  ic:
+    description: §9<OP>インベントリ削除
+    permission: clearinventory
+permissions:
+  clearinventory.own:
+    description: Allow player to clear their own inventory
+    default: op
+  clearinventory.other:
+    description: Allow player to clear players' inventories
+    default: op
+...
