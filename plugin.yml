@@ -2,9 +2,7 @@
 name: InventoryClear
 author: narapon
 version: 1.0.0
-api:
-- 4.0.0
-- 3.3.2
+api: 3.4.0
 main: Narapon\InventoryClear\Main
 commands:
   ic:
