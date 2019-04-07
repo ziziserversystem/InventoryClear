@@ -6,7 +6,7 @@ api: 3.4.0
 main: Narapon\InventoryClear\Main
 commands:
   ic:
-    description: §9<OP>インベントリ削除
+    description: §8<OP> インベントリ削除
     permission: clearinventory
 permissions:
   clearinventory.own:
