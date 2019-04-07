@@ -27,18 +27,18 @@ class Main extends PluginBase {
                             $playername = $player->getName();
                             $last_letter = substr($playername, -1);
                             if($last_letter === "s" || $last_letter === "z" || $last_letter === "x") {
-                                $sender->sendMessage("§a【運営】 §e " . $player->getDisplayName() . " のインベントリを削除しました");
+                                $sender->sendMessage("§a【運営】 §f " . $player->getDisplayName() . " のインベントリを削除しました");
                             } else {
-                                $sender->sendMessage("§a【運営】 §e " . $player->getDisplayName() . " のインベントリを削除しました");
+                                $sender->sendMessage("§a【運営】 §f " . $player->getDisplayName() . " のインベントリを削除しました");
                             }
                         } else {
-                             $sender->sendMessage("§a【運営】 §e指定したプレイヤーはいません");
+                             $sender->sendMessage("§a【運営】 §c指定したプレイヤーはいません");
                         }
                     }
                 } else {
                     if($sender->hasPermission("clearinventory.own")) {
                         $sender->getInventory()->clearAll();
-                        $sender->sendMessage("§a【運営】 §eあなたのインベントリを削除しました");
+                        $sender->sendMessage("§a【運営】 §fあなたのインベントリを削除しました");
                     }
                 }
                 break;
